@@ -1,20 +1,16 @@
-/*** Definition Section has one variable
-which can be accessed inside yylex()
-and main() ***/
+
 %{
 int count = 0;
 %}
 
-/*** Rule Section has three rules, first rule
-matches with capital letters, second rule
-matches with any character except newline and
-third rule does not take input after the enter***/
+
 %%
-[A-Z] {printf("%s capital letter\n", yytext);
-       count++;}
-.     {printf("%s not a capital letter\n", yytext);}
+[a-zA-Z0-9]+@[a-zA-Z]+\.[a-zA-Z]{2,4} {printf("%s is an email address\n", yytext);}
+[aeiouAEIOU] {count++;}
+.     {printf("%s is not an email address\n", yytext);}
 \n    {return 0;}
 %%
+
  
 /*** Code Section prints the number of
 capital letter present in the given input***/
