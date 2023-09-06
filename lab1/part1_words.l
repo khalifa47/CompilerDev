@@ -5,6 +5,7 @@
 \n {}
 %%
 
+int yywrap(){}
 int main() {
     yylex();
     
