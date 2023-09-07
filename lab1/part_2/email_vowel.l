@@ -1,3 +1,5 @@
+/* The resultant lexer from this code checks whether a given input is a valid email address based on the specified rules and counts the number of vowels in the input regardless of whether the input is a valid email address or not */
+
 %{
 #include <string.h>
 int is_email = 0;
@@ -6,6 +8,7 @@ char email[256] = "";
 %}
 
 %%
+/* This rule checks whether an email addres is valid, and counts the number of vowels in it */
 [A-Za-z0-9]+@[A-Za-z]+\.[A-Za-z]{2,4} {
     is_email = 1;
     strncpy(email, yytext, sizeof(email) - 1);
@@ -16,6 +19,8 @@ char email[256] = "";
         }
     }
 }
+
+/* This rule checks the number of vowels in a given input if it is not an email address */
 [aeiouAEIOU] { vowel_count++; }
 \n {
     if (is_email) {
