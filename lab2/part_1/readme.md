@@ -1,0 +1,3 @@
+i. The logic used is that all commented lines would begin with a `#` in Python. Therefore, we can detect then by checking all lines of the program and evaluating whether they start with the `#` or not. If yes, the line is marked as a comment by assigning `True` to its output, else it is assigned `False` to its output.
+
+ii. Lexical analysis was more important in implementing this solution to distinguish comments from non-comments. Specifically, we use the `startswith` method to check if a line starts with the comment token `#`. This is a form of lexical analysis where we recognize a specific token (the `#` symbol) to identify comments.
