@@ -97,3 +97,16 @@ if __name__ == "__main__":
     except ValueError as e:
         print("We Mzee:", e)
 
+#   NOW, WHAT IN THE WORLD😱 IS A POSTFIX EXPRESSION? You might WONDER🤔.
+
+#   A postfix expression, also known as Reverse Polish Notation (RPN), is a mathematical notation
+#   where operators come after their operands. This notation eliminates the need for parentheses
+#   to specify the order of operations.
+#
+#   FOR EXAMPLE:
+#   The infix expression "3 + 4" would be written in postfix notation as "3 4 +".
+#   Similarly, "5 * (2 + 8)" in infix notation becomes "5 2 8 + * " in postfix notation.
+#
+#   One of the main advantages of postfix notation is that it eliminates the need for parentheses to indicate the order of operations.🙃
+
+#   Good, now we know something new😁🤸🏾
