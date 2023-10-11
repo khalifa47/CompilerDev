@@ -3,3 +3,5 @@
 *.out
 *.yy.c
 *.deb
+*.tab.c
+*.tab.h
