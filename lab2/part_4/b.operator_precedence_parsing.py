@@ -102,7 +102,7 @@ if __name__ == "__main__":
 
 
 
-#   NOW, WHAT IN THE WORLD😱 IS A POSTFIX EXPRESSION? You might WONDER🤔.
+#   Now, What in the WORLD!😱 is a POSTFIX EXPRESSION? You might WONDER🤔.
 
 #   A postfix expression, also known as Reverse Polish Notation (RPN), is a mathematical notation
 #   where operators come after their operands. This notation eliminates the need for parentheses
