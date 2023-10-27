@@ -7,3 +7,5 @@ SwahiliScript is a simple programming language designed for educational purposes
 - **Lexer**: Tokenizes SwahiliScript code into a list of tokens.
 - **Parser**: Parses the tokenized code into an Abstract Syntax Tree (AST).
 - **Interpreter**: Executes SwahiliScript code by evaluating the AST.
+
+To run sample code use `python main.py test.swa`
