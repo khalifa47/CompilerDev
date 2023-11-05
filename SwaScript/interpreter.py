@@ -87,6 +87,7 @@ class Interpreter:
 
         body = ast[3]
 
+        # initialize array of None values for output
         result = [None] * (end - start + 1)
 
         for i in range(start, end + 1):
