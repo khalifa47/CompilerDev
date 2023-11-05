@@ -4,7 +4,7 @@ TOKEN_TYPES = [
     ("BOOL", r"kweli|uwongo"),
     ("OPERATOR", r"\+|-|\*|/"),
     ("COMPARISON", r"ni sawa na|si sawa na|kubwa kuliko|ndogo kuliko|kubwasawana|ndogosawana"),
-    ("KEYWORD", r"kuwa|chapisha|weka|ikiwa|basi|mwisho|kwa kila|katika|hadi|fanya|funza"),
+    ("KEYWORD", r"kuwa|chapisha|weka|ikiwa|basi|mwisho|kwa kila|katika|hadi|fanya"),
     ("STRING", r'"[^"]*"'),
     ("IDENTIFIER", r"[A-Za-z]+"),
     ("NUMBER", r"\d+(\.\d+)?"),

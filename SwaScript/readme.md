@@ -54,18 +54,16 @@ SwahiliScript is a programming language inspired by the Swahili language, design
 
 The language includes a set of keywords used to define various program structures and control flow:
 
-- **Deklare:** Used for variable declaration.
-- **Kuwa:** Used in variable assignment.
-- **Chapisha:** Prints the value of expressions or variables.
-- **Weka:** Assigns a value to a variable.
-- **Ikiwa:** Starts an if statement to check conditions.
-- **Basi:** Indicates the body of an if statement or loop.
-- **Mwisho:** Marks the end of an if statement or loop.
-- **Kwa Kila:** Initiates a loop structure to iterate over a range.
-- **Katika:** Specifies the beginning of the range in a loop.
-- **Hadi:** Specifies the end of the range in a loop.
-- **Fanya:** Indicates the beginning of the loop's body.
-- **Funza:** Intended for more complex functionalities or future language extensions.
+- **weka:** Assigns a value to a variable.
+- **kuwa:** Used in variable assignment.
+- **chapisha:** Prints the value of expressions or variables.
+- **ikiwa:** Starts an if statement to check conditions.
+- **basi:** Indicates the body of an if statement or loop.
+- **mwisho:** Marks the end of an if statement or loop.
+- **kwa kila:** Initiates a loop structure to iterate over a range.
+- **katika:** Specifies the beginning of the range in a loop.
+- **hadi:** Specifies the end of the range in a loop.
+- **fanya:** Indicates the beginning of the loop's body.s
 
 ### Data Types
 
@@ -88,3 +86,49 @@ The language allows users to perform various operations using arithmetic and com
 - **For Loop:** Utilizes `kwa kila` (for each) and `fanya` (do) to loop over a specified range, specifying the range using `katika` (from) and `hadi` (to).
 
 The language's syntax is designed to be clear and straightforward, providing a simple yet effective way to express logic and computations.
+
+## Examples of code snippets
+
+#### Variable Assignment and Printing
+
+```python
+weka x kuwa 10  # Assigning value to the variable x
+weka y kuwa "Habari, SwahiliScript!"  # Assigning a string to variable y
+chapisha x  # Printing the value of variable x
+chapisha y  # Printing the value of variable y
+```
+
+#### Conditional Statement
+
+```python
+ikiwa x ni sawa na 10 basi  # If x is equal to 10
+    chapisha "Value of x is 10"  # Print this statement
+mwisho  # End of if statement
+```
+
+#### Loop
+
+```python
+kwa kila i katika 1 hadi 5 fanya  # For loop from 1 to 5
+    chapisha i  # Print the value of i
+mwisho  # End of for loop
+```
+
+#### Arithmetic Operations
+
+```python
+weka a kuwa 5
+weka b kuwa 7
+weka c kuwa a + b  # Addition operation
+chapisha c  # Output: 12
+
+weka d kuwa 15
+weka e kuwa d - a  # Subtraction operation
+chapisha e  # Output: 10
+
+weka f kuwa a * b  # Multiplication operation
+weka f  # Output: 35
+
+weka g kuwa b / a  # Division operation
+weka g  # Output: 1.4
+```
