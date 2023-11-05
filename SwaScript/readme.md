@@ -2,6 +2,8 @@
 
 SwahiliScript is a simple programming language designed for educational purposes, based on Swahili keywords. This project includes a lexer, parser, and interpreter for the SwahiliScript language. Test-driven development, in the form of unit tests (found in the `/tests` folder), was used to ensure robustness of the compiler.
 
+To run sample code use `python main.py test.swa`
+
 ## Features
 
 1. ### [Lexer](https://github.com/khalifa47/CompilerDev/blob/main/SwaScript/lexer.py): Tokenizes SwahiliScript code into a list of tokens.
@@ -46,4 +48,43 @@ SwahiliScript is a simple programming language designed for educational purposes
 
 ## Language Syntax
 
-To run sample code use `python main.py test.swa`
+SwahiliScript is a programming language inspired by the Swahili language, designed with simplicity and readability in mind. Its syntax encompasses various constructs and features enabling developers to write expressive code.
+
+### Keywords
+
+The language includes a set of keywords used to define various program structures and control flow:
+
+- **Deklare:** Used for variable declaration.
+- **Kuwa:** Used in variable assignment.
+- **Chapisha:** Prints the value of expressions or variables.
+- **Weka:** Assigns a value to a variable.
+- **Ikiwa:** Starts an if statement to check conditions.
+- **Basi:** Indicates the body of an if statement or loop.
+- **Mwisho:** Marks the end of an if statement or loop.
+- **Kwa Kila:** Initiates a loop structure to iterate over a range.
+- **Katika:** Specifies the beginning of the range in a loop.
+- **Hadi:** Specifies the end of the range in a loop.
+- **Fanya:** Indicates the beginning of the loop's body.
+- **Funza:** Intended for more complex functionalities or future language extensions.
+
+### Data Types
+
+SwahiliScript supports the following data types:
+
+- **Nambari (Number):** Represents numeric values.
+- **Herufi (String):** Represents textual data enclosed in double quotes.
+- **Kweli/Uwongo (Boolean):** Represents true or false values.
+
+### Expressions and Operators
+
+The language allows users to perform various operations using arithmetic and comparison operators:
+
+- **Arithmetic Operators:** `+, -, *, /` for addition, subtraction, multiplication, and division.
+- **Comparison Operators:** `ni sawa na, si sawa na, kubwa kuliko, ndogo kuliko, kubwasawana, ndogosawana` for equality, inequality, greater than, less than, greater than or equal to, and less than or equal to respectively.
+
+### Control Structures
+
+- **If-else Statements:** Defined using `ikiwa` (if) to check conditions and `basi` (then) for the body, with `mwisho` to signify the end.
+- **For Loop:** Utilizes `kwa kila` (for each) and `fanya` (do) to loop over a specified range, specifying the range using `katika` (from) and `hadi` (to).
+
+The language's syntax is designed to be clear and straightforward, providing a simple yet effective way to express logic and computations.
